@@ -32,7 +32,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/k7gi/AnimationSpy/ref
 
 ## Requirements
 
-The executor needs `loadstring`, `game:HttpGet`, `setclipboard`, and the ability to parent to `CoreGui`.
+The executor needs `loadstring`, `game:HttpGet`, and `setclipboard`. The GUI is parented to `gethui()` when the executor has it, and to `CoreGui` otherwise.
 
 >[!NOTE]
 > The code highlighting comes from SimpleSpy's `highlight.lua`, fetched at startup. If the fetch fails, the codebox falls back to plain text.
