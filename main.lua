@@ -624,6 +624,7 @@ end
 
 closeButton.MouseButton1Click:Connect(shutdown)
 
-gui.Parent = CoreGui
+local ok, hiddenUi = pcall(function() return gethui and gethui() end)
+gui.Parent = ok and hiddenUi or CoreGui
 _G.AnimSpyShutdown = shutdown
 _G.AnimSpyExecuted = true
